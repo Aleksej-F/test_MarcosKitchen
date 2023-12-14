@@ -1,0 +1,299 @@
+@font-face {
+	font-family: 'Onest';
+	src: url('../fonts/Onest-Regular.woff') format('woff');
+	font-weight: 1;
+	font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Onest";
+}
+p{
+  margin: 0;
+}
+.wraper{
+  max-width: 1922.793px;
+  margin: 0 auto;
+}
+.first_screen{
+  height: 850.47px;
+  background-image: url("../img/первый экран.png");
+  background-size: cover;
+  background-position: right top;
+  
+  &_cont{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 163px;
+    &_marking{
+      position: absolute;
+      top: -104px;
+      left: 392px;
+      width: 160px;
+      padding: 18px 32px;
+      color: #FFF;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-radius: 15px;
+      background: rgba(0, 43, 69, 0.90);
+      p{
+        margin: 0;
+      }
+      svg{
+        position: absolute;
+        right: -15px;
+        top: 27px;
+      }
+      &:nth-child(6){
+        top: 43px;
+        left: 740px;
+        width: 202px;
+      }
+      &:nth-child(7){
+        top: 240px;
+        left: 674px;
+        width: 151px;
+      }
+    }
+    div:nth-child(3){
+      display: flex;
+      margin: 56px 0 15px 0;
+      position: relative;
+      >p{
+        text-align: left;
+        color: #FFF;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      >svg{
+        position: absolute;
+        top: 10px;
+        left:  248px;
+      }
+
+    }
+    button{
+      height: 58px;
+      width: 203px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.16px;
+      text-transform: uppercase;
+      background-color: #827f7f00;
+      border: 1px solid #FFF;
+    }
+    h1{
+      max-width: 729px;
+      height: 150px;
+      color: #FFF;
+      font-family: Lora;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+  }
+  &_price{
+    margin-top: 48px;
+    display: flex;
+    >div{
+      margin-left:31px ;
+    }
+    p{
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      &:nth-child(2){
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+.header{
+  &_cont{
+    height: 125px;
+    background: rgba(0, 43, 69, 0.90);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >svg{
+      margin-left: 159px;
+    }
+    button{
+      margin-right: 150px;
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      display: inline-flex;
+      padding: 15px 26.7px;
+      justify-content: center;
+      align-items: center;
+      border: 0.84px solid #FFF;
+      width: 183px;
+      height: 49.08px;
+      background-color: #ffffff00;
+      white-space:nowrap;
+    }
+  }
+  &_yandex_maps{
+    display: flex;
+    margin-left: 34.77px;
+    &-text{
+      p{
+        color: #FFF;
+        font-family: "Yandex Sans Display";
+        font-size: 13.826px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &:nth-child(3){
+          color: #FFF;
+          font-family: "Yandex Sans Display";
+          font-size: 8.752px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    &-group{
+      display: flex;
+      margin-top: 7.3px;
+      p{
+        color: #827F7F;
+        font-family: "Yandex Sans Display";
+        font-size: 21.653px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.217px;
+      }
+    }
+  }
+  &_address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 231px;
+    height: 49px;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 73px;
+    p{
+      white-space:nowrap;
+      &:nth-child(2){
+        font-weight: 400;
+      }
+    }
+  }
+  &_contacts{
+    display: flex;
+    align-items: center;
+    margin-right: 19.69px;
+    svg:nth-child(2){
+      margin-left: 16px;
+    }
+    p{
+      margin-left: 20.31px;
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      white-space:nowrap;
+    }
+  }
+  &_dopblock{
+    flex: 10%;
+  }
+}
+.advantages{
+  height: 405px;
+  background-color: #FBF6EF;
+  position: relative;
+  
+  img{
+    position: absolute;
+    top: -38px;
+  }
+  &_row1{
+    display: flex;
+    margin: 0 0px 57px 515px;
+    padding-top: 139px;
+    justify-content: space-between;
+    &-title{
+      color: #002B45;
+      font-family: "Lora";
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    &-rectangle{
+      margin-left: 20px;
+      margin-top: 19px;
+      height: 1px;
+      background: #002B45;
+      flex: 1;
+      
+    }
+  }
+  &_row2{
+    margin: 0 0px 0px 521px;
+    display: flex;
+    &-item{
+      display: flex;
+      margin-right: 75px;
+      &-title{
+        width: 270px;
+        margin-left: 36px;
+        p{
+          color: #002B45;
+          font-family: "Open Sans";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          &:nth-child(2){
+            font-weight: 400;
+          }
+          &:nth-child(3){
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
