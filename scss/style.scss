@@ -172,6 +172,9 @@ p{
   &_yandex_maps{
     display: flex;
     margin-left: 34.77px;
+    @media (max-width: 1180px){
+      display:none;
+    }
     &-text{
       p{
         color: #FFF;
@@ -217,6 +220,9 @@ p{
     font-weight: 700;
     line-height: normal;
     margin-right: 73px;
+    @media (max-width: 1536px){
+      display:none;
+    }
     p{
       white-space:nowrap;
       &:nth-child(2){
@@ -243,7 +249,12 @@ p{
     }
   }
   &_dopblock{
-    flex: 10%;
+    flex: 10vw;
+    @media (max-width: 1680px){
+      flex:0;
+    }
+
+    
   }
 }
 .advantages{
@@ -295,15 +306,15 @@ p{
     }
     &-item{
       display: flex;
-      margin-right: 69px;
+      margin-right: 96px;
       &:nth-child(2){
-        padding-left: 13px;
+        margin-right: 82px;
       }
       @media (max-width: 1366px){
         margin-right: 0px;
       }
       &-title{
-        width: 264px;
+        
         margin-left: 29px;
         p{
           color: #002B45;
@@ -366,7 +377,8 @@ p{
     margin-top: 46px;
     display: flex;
     z-index: 10;
-    
+    flex-wrap: wrap;
+    gap: 44px;
     &-filters{
       display: flex;
       
@@ -474,9 +486,10 @@ p{
     }
     &-button{
       height: 58px;
-      margin-left: 44px;
       display: flex;
       gap: 10px;
+      
+      
       button{
         width: 165px;
         height: 61px;
@@ -501,26 +514,27 @@ p{
     }
   }
   &_list{
-
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 48px;
-    margin: 155px 150px 100px 150px;
+    margin: 149px 0px 100px 149px;
+    @media (max-width: 1180px){
+       margin-top: 241px; 
+       justify-content: center;
+    }
     &-item{
       position: relative;
       width: 786px;
       height: 436px;
       display: flex;
       justify-content: end;
-      
       &_description{
         width: 587px;
         height: 436px;
         border: 1px solid #000;
         background: #FBF6EF;
         &-title{
-          margin: 55px 0 0 133px;
+          margin: 59px 0 0 132px;
           color: #002B45;
           font-family: Lora;
           font-size: 24px;
@@ -533,10 +547,10 @@ p{
           font-family: "Lora";
           font-size: 16px;
           font-weight: 400;
-          margin: 20px 0 0 133px;
+          margin: 22px 0 0 133px;
         }
         &-collecting{
-          margin-top: 45px;
+          margin-top: 44px;
           margin-left: 137px;
           max-width: 395px;
           display: flex;
@@ -552,6 +566,7 @@ p{
               &:nth-child(2){
                 font-size: 16px;
                 font-weight: 400;
+                margin-top: 6px;
               }
             }
 
@@ -579,9 +594,9 @@ p{
           }
         }
         &-button{
-          margin:46px 0 0 134px;
+          margin:50px 0 0 133px;
           display: flex;
-          gap: 16.3px;
+          gap: 18.3px;
           button{
             width: 161px;
             height: 58px;

@@ -176,6 +176,11 @@ p {
   display: flex;
   margin-left: 34.77px;
 }
+@media (max-width: 1180px) {
+  .header_yandex_maps {
+    display: none;
+  }
+}
 .header_yandex_maps-text p {
   color: #FFF;
   font-family: "Yandex Sans Display";
@@ -219,6 +224,11 @@ p {
   line-height: normal;
   margin-right: 73px;
 }
+@media (max-width: 1536px) {
+  .header_address {
+    display: none;
+  }
+}
 .header_address p {
   white-space: nowrap;
 }
@@ -244,7 +254,12 @@ p {
   white-space: nowrap;
 }
 .header_dopblock {
-  flex: 10%;
+  flex: 10vw;
+}
+@media (max-width: 1680px) {
+  .header_dopblock {
+    flex: 0;
+  }
 }
 
 .advantages {
@@ -305,10 +320,10 @@ p {
 }
 .advantages_row2-item {
   display: flex;
-  margin-right: 69px;
+  margin-right: 96px;
 }
 .advantages_row2-item:nth-child(2) {
-  padding-left: 13px;
+  margin-right: 82px;
 }
 @media (max-width: 1366px) {
   .advantages_row2-item {
@@ -316,7 +331,6 @@ p {
   }
 }
 .advantages_row2-item-title {
-  width: 264px;
   margin-left: 29px;
 }
 .advantages_row2-item-title p {
@@ -377,6 +391,8 @@ p {
   margin-top: 46px;
   display: flex;
   z-index: 10;
+  flex-wrap: wrap;
+  gap: 44px;
 }
 .works_panel-filters {
   display: flex;
@@ -479,7 +495,6 @@ p {
 }
 .works_panel-button {
   height: 58px;
-  margin-left: 44px;
   display: flex;
   gap: 10px;
 }
@@ -506,10 +521,15 @@ p {
 }
 .works_list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 48px;
-  margin: 155px 150px 100px 150px;
+  margin: 149px 0px 100px 149px;
+}
+@media (max-width: 1180px) {
+  .works_list {
+    margin-top: 241px;
+    justify-content: center;
+  }
 }
 .works_list-item {
   position: relative;
@@ -525,7 +545,7 @@ p {
   background: #FBF6EF;
 }
 .works_list-item_description-title {
-  margin: 55px 0 0 133px;
+  margin: 59px 0 0 132px;
   color: #002B45;
   font-family: Lora;
   font-size: 24px;
@@ -538,10 +558,10 @@ p {
   font-family: "Lora";
   font-size: 16px;
   font-weight: 400;
-  margin: 20px 0 0 133px;
+  margin: 22px 0 0 133px;
 }
 .works_list-item_description-collecting {
-  margin-top: 45px;
+  margin-top: 44px;
   margin-left: 137px;
   max-width: 395px;
   display: flex;
@@ -558,6 +578,7 @@ p {
 .works_list-item_description-collecting-item p:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
+  margin-top: 6px;
 }
 .works_list-item_description-collecting-gap {
   width: 0.948px;
@@ -581,9 +602,9 @@ p {
   font-weight: 400;
 }
 .works_list-item_description-button {
-  margin: 46px 0 0 134px;
+  margin: 50px 0 0 133px;
   display: flex;
-  gap: 16.3px;
+  gap: 18.3px;
 }
 .works_list-item_description-button button {
   width: 161px;
